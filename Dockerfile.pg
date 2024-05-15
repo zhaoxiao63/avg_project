@@ -1,0 +1,10 @@
+# 使用官方的PostgreSQL镜像作为基础镜像
+FROM postgres:latest
+
+# 设置环境变量以自动化配置
+ENV POSTGRES_USER postgres
+ENV POSTGRES_PASSWORD mysecretpassword
+
+# 复制初始化脚本到镜像中的docker-entrypoint-initdb.d目录
+COPY init.sql /docker-entrypoint-initdb.d/
+
