@@ -2,7 +2,7 @@
 
 CREATE DATABASE agv_traffic_db;
 
-\connect agv_traffic_db;
+connect agv_traffic_db;
 
 CREATE TABLE agv_total_traffic (
     route_id TEXT,

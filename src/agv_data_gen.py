@@ -1,3 +1,4 @@
+import json
 import uuid
 import random
 import time
@@ -41,6 +42,7 @@ def generate_data():
 
 
 if __name__ == "__main__":
+    print(json.dumps(CONFIG))
     producer = KafkaProduct(CONFIG["KAFKA_CONFIG"]["bootstrap.servers"])
     while True:
         data = generate_data()
