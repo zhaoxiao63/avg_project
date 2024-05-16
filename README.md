@@ -3,7 +3,7 @@
 ## 1.Set Up and Run the Project
 
 ```sh
-# kafka postgre zookeeper（kafka依赖zk）
+# kafka postgre zookeeper（kafka depends on zookeeper）
 docker-compose -p agv_project up -d
 ```
 
